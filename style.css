@@ -1,104 +1,20 @@
 /*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
-.projectcardsmain {
-  width: 90%;
-  margin: auto;
-  /* gap: 10%; */
-  display: flex;
-  margin-bottom: 7%;
-}
-
-.projectcards {
-  position: relative;
-  width: 90%;
-}
-
-.imagepro {
-  display: block;
-  width: 90%;
-  height: 100%;
-  margin: auto;
-}
-
-.overlaypro {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #000000d8;
-  overflow: hidden;
-  width: 90%;
-  margin: auto;
-  height: 0;
-  transition: 0.8s ease;
-}
-
-.projectcards:hover .overlaypro {
-  bottom: 0%;
-  height: 100%;
-  top: 00%;
-  width: 90%;
-  margin: auto;
-}
-.textpro {
-  text-align: center;
-  padding-top: 25%;
-  color: #f8f8f8;
-}
-
-/* 
-.textpro {
-  /* white-space: nowrap; 
-  color: #ff6402;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); //
-  color: #0c223b;
-  font-size: 14px;
-  position: absolute;
-  overflow: visible;
-  top: 7%;
-  left: 4%;
-  width: 83%;
-} */
-
-.projectbuttons {
-  width: 80%;
-  margin: auto;
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.projectbuttons button {
-  padding: 10px 20px;
-  font-size: 15px;
-  border-radius: 8px;
-  /* font-weight: 800; */
-  background-color: #e6840d;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -113,11 +29,11 @@ html {
 
 /* all similar content styling codes */
 section {
-  padding: 100px 0;
+  padding: 85px 0;
 }
 .max-width {
   max-width: 1300px;
-  padding: 0 80px;
+  padding: 0px 80px;
   margin: auto;
 }
 .aboutmain,
@@ -236,7 +152,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #251e21;
+  background: #0c223b;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -273,7 +189,6 @@ section .title::after {
   font-family: "Ubuntu", sans-serif;
 }
 .home1 .max-width {
-  /* border: 1px solid red; */
   width: 100%;
   margin: auto;
   display: flex;
@@ -319,6 +234,7 @@ section .title::after {
 }
 
 /* aboutmain section styling */
+
 .aboutmain .title::after {
   content: "who I am";
 }
@@ -326,13 +242,18 @@ section .title::after {
 .aboutmain .aboutmain-content .left {
   width: 45%;
 }
+
+.aboutmain .aboutmain-content .left .image_container {
+  width: 80%;
+  margin: auto;
+}
 .aboutmain .aboutmain-content .left img {
-  height: 460px;
-  width: 400px;
+  width: 100%;
   object-fit: cover;
   border-radius: 6px;
 }
 .aboutmain .aboutmain-content .right {
+  text-align: center;
   width: 55%;
 }
 .aboutmain .aboutmain-content .right .text {
@@ -359,13 +280,14 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .aboutmain .aboutmain-content .right a:hover {
-  box-shadow: rgba(20, 105, 145, 0.281) 0px 15px 25px, rgba(255, 255, 255, 0.05) 0px 5px 10px;
+  box-shadow: rgba(20, 105, 145, 0.281) 0px 15px 25px,
+    rgba(255, 255, 255, 0.05) 0px 5px 10px;
 }
 .aboutmain button {
   margin-top: 30px;
-  margin-left: 31%;
   border: none;
 }
+
 /* services section styling */
 .services,
 .project {
@@ -401,7 +323,6 @@ section .title::after {
 }
 .services .serv-content .card i {
   font-size: 50px;
-  /* color: #251e21; */
   transition: color 0.3s ease;
 }
 
@@ -411,134 +332,137 @@ section .title::after {
   margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
-
-.skills-images img {
-  height: 100px;
-  width: calc(80% - 10px);
-  border-radius: 5%;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-  padding: 20px;
-  transition: all 0.3s ease;
-}
+/* Tech stack */
 .skills .title::after {
   content: "what I know";
 }
 
-/* skills right column */
-.skills .skills-content .column {
-  width: calc(50% - 30px);
-  height: 70vh;
-  display: grid;
-  padding: 5%;
-  grid-template-columns: repeat(2, 1fr);
+.skills .skills-content #container {
+  width: 100%;
+}
+.skills .skills-content #container > div {
+  width: 100%;
+  margin-top: 15px;
 }
 
-.skills .skills-content .left .text {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 10px;
+#container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 25px;
+  margin: auto;
 }
-.skills .skills-content .left p {
-  text-align: justify;
+#container > div {
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
 }
-.skills .skills-content .left a {
-  display: inline-block;
-  background: #251e21;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid #251e21;
-  transition: all 0.3s ease;
-}
-/* .skills .skills-content .left a:hover {
-  color: #251e21;
-  background: none;
-} */
 
 /* project section styling */
 .project .title::after {
   content: "see my work";
 }
-.project .carousel .card {
-  background: #222;
-  border-radius: 6px;
-  padding: 25px 35px;
-  text-align: center;
-  overflow: hidden;
-  transition: all 0.3s ease;
+.project-width {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
 }
-.project .carousel .card:hover {
-  background: #251e21;
-}
-.project .carousel .card .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.project .carousel .card:hover .box {
-  transform: scale(1.05);
-}
-.project .carousel .card .text {
-  font-size: 22px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
+.projectcardsmain {
+  /* border: 1px solid yellow; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
 }
 
-.repo-links {
+.projectcards {
+  position: relative;
+  /* border: 2px solid blue; */
+}
+
+.projectcards .imageProject {
+  width: 100%;
+}
+.projectcards .imageProject img {
+  width: 100%;
+}
+.projectcards .textProject {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectcards .textProject .project-data {
+  /* border: 1px solid yellow; */
+  width: 75%;
+}
+
+.projectcards .textProject .project-buttons {
+  /* border: 1px solid rgb(255, 81, 0); */
+  height: 200px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+  width: 20%;
+  align-items: center;
+  padding-top: 7%;
+}
+.projectcards .textProject .project-buttons button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #e6840d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.projectcards .textProject .project-data .project-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.project-title {
+  margin: 15px 0px;
+}
+
+/* .repo-links {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 45px;
   margin-top: 5%;
-  /* border: 2px solid wheat; */
-}
+} */
 
-.repo-div {
+/* .repo-div {
   display: flex;
   width: 35%;
   border: 1px solid white;
   justify-content: center;
   align-items: center;
-}
-
+} */
+/* 
 .demo-div {
   display: flex;
   width: 35%;
   border: 1px solid white;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.demo-div a,
+/* .demo-div a,
 .repo-div a,
 .repo-div a:link,
 .demo-div a:link {
   text-decoration: none;
   color: white;
-}
-
-.project .carousel .card img {
-  height: 250px;
-  width: 250px;
-  object-fit: cover;
-  border-radius: 5%;
-  border: 5px solid #251e21;
-  transition: all 0.3s ease;
-}
-.project .carousel .card:hover img {
-  border-color: #fff;
-}
+} */
+/* 
 .owl-dots {
   text-align: center;
   margin-top: 20px;
-}
-.owl-dot {
+} */
+/* .owl-dot {
   height: 13px;
   width: 13px;
   margin: 0 5px;
@@ -546,17 +470,20 @@ section .title::after {
   border-radius: 50%;
   border: 2px solid #251e21 !important;
   transition: all 0.3s ease;
-}
-.owl-dot.active {
+} */
+/* .owl-dot.active {
   width: 35px;
   border-radius: 14px;
-}
-.owl-dot.active,
+} */
+/* .owl-dot.active,
 .owl-dot:hover {
   background: #251e21 !important;
-}
+} */
 
 /* contact section styling */
+/* #contact,.max-width {
+  border: 1px solid red;
+} */
 .contact .title::after {
   content: "get in touch";
 }
@@ -666,36 +593,14 @@ section .title::after {
 }
 /* footer section styling */
 footer {
-  background: #111;
-  padding: 15px 23px;
+  background: #092039;
+  padding: 10px;
   color: #fff;
   text-align: center;
-}
-footer span a {
-  color: #251e21;
-  text-decoration: none;
-}
-footer span a:hover {
-  text-decoration: underline;
+  font-size: small;
 }
 
-/* responsive media query start */
-@media (max-width: 1012px) {
-  .aboutmain .aboutmain-content .left img {
-    height: 350px;
-    width: 350px;
-  }
-}
-
-@media (max-width: 991px) {
-  .max-width {
-    padding: 0 50px;
-  }
-  .aboutmain .aboutmain-content .left img {
-    width: 60%;
-  }
-}
-@media (max-width: 947px) {
+@media (max-width: 1060px) {
   .menu-btn {
     display: block;
     z-index: 999;
@@ -709,7 +614,7 @@ footer span a:hover {
     width: 100%;
     left: -100%;
     top: 0;
-    background: #111;
+    background: #092039;
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -740,26 +645,14 @@ footer span a:hover {
   }
   .aboutmain .aboutmain-content .column {
     width: 100%;
+    margin: auto;
   }
-  .aboutmain .aboutmain-content .left {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 60px;
-  }
-  /* .aboutmain .aboutmain-content .left img{
-    width: 60%;
-  } */
   .aboutmain .aboutmain-content .right {
     flex: 100%;
   }
   .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
-  }
-  .skills .skills-content .column,
-  .contact .contact-content .column {
-    width: 100%;
-    margin-bottom: 35px;
   }
 }
 
@@ -778,18 +671,6 @@ footer span a:hover {
   }
   .services .serv-content .card {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 594px) and (max-width: 947px) {
-  .aboutmain .aboutmain-content .left img {
-    width: 5%;
-  }
-}
-
-@media screen and (min-width: 368px) and (max-width: 947px) {
-  .aboutmain .aboutmain-content .left img {
-    width: 55%;
   }
 }
 
@@ -824,29 +705,19 @@ footer span a:hover {
   }
 }
 
-/* Tech stack */
-#container {
-  /* border: 5px solid green; */
-  display: grid;
-  grid-template-rows: repeat(auto, auto);
-  grid-template-columns: repeat(5, auto);
-  gap: 100px;
-  margin: auto;
-}
-#container > div {
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
+/* github */
+#stats{
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 #githubstatsflex {
-  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 80%;
   margin: auto;
-  display: flex;
-  flex-direction: row;
   margin-bottom: 40px;
-  justify-content: center;
+  gap: 20px;
 }
 
 #statssecondcolumn {
@@ -858,104 +729,100 @@ footer span a:hover {
   height: 100%;
 }
 
-#statsimg {
-  width: 50%;
+#statsimg img{
+  width: 100%;
 }
-
-.margintop {
-  margin-top: 50px;
+#statsimg1 img{
+  width: 100%;
 }
 
 .calendar {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
-/* Github stats */
-/* 
-#stats>div>img{
-  height: 100%;
-}
-#stats img{
-  width: 52%;
-  transition:transform .2s;
-  margin-left: 20%;
-}
-#statsimg>img{
-width: 85%;
-margin-left: 5%;
-}
-#stats img:hover{
-  transform: scale(1.01);
-}
 
-.calendar{
-  width: 90%;
-  padding: 1%;
-}
 
-#calendar h2{
-  margin: 35px 0 20px 0;
-}
-
-@media only screen and (max-width: 900px){
-  #stats>div{
-    flex-direction: column;
-    }
-
-  #stats>div>img{
-    margin-left: 23%;
-    margin-bottom: 3%;
-  }
-  #statsimg>img{
-    margin-left: 17%;
-  }
-} */
-@media only screen and (max-width: 900px){
-  #statsimg>img{
-    margin-left: 32%;
-  }
-} 
-/* Github stats end */
-
-@media screen and (max-width: 500px) and (min-width: 0px) {
+@media screen and (max-width: 1050px) and (min-width: 700px) {
   #container {
-    grid-template-rows: repeat(auto, auto);
-    grid-template-columns: repeat(2, auto);
-    gap: 100px;
-    margin: auto;
+    grid-template-columns: repeat(4, auto);
   }
+}
 
-  .projectcardsmain {
-    display: block;
-  }
-
-  .projectbuttons button {
-    margin-bottom: 5%;
-  }
-
-  .project {
-    padding: 10% 0%;
+@media screen and (max-width: 700px) and (min-width: 444px) {
+  #container {
+    grid-template-columns: repeat(3, auto);
   }
 
   #githubstatsflex {
+    grid-template-columns: repeat(1,1fr);
+    width: 70%;
+    gap: 0px;
+  }
+  #statssecondcolumn img{
+    margin-bottom: 4px;
+  }
+
+}
+
+@media screen and (max-width: 444px) and (min-width: 0px) {
+  #container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 600px) {
+  .projectcardsmain {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .project-width {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+  .projectcardsmain {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projectcards .textProject {
     display: block;
   }
-}
-@media screen and (max-width: 1024px) and (min-width: 501px) {
-  #container {
-    grid-template-rows: repeat(auto, auto);
-    grid-template-columns: repeat(3, auto);
-    gap: 100px;
+  .textProject {
+    width: 100%;
+  }
+  .projectcards .textProject .project-data {
+    width: 100%;
+  }
+  .projectcards .textProject .project-data .project-description {
+    font-size: small;
+  }
+
+  .projectcards .textProject .project-buttons {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 90%;
     margin: auto;
-  }
-
-  .project {
-    padding: 100px 0px 80px 0px;
+    padding-top: 5%;
   }
 }
 
-@media screen and (max-width: 2560px) and (min-width: 501px) {
-  .project {
-    padding: 80px 0px 60px 0px;
+@media screen and (max-width: 900px) and (min-width: 0px) {
+  .contact .contact-content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    /* border: 2px solid blue; */
+    gap:30px
+  }
+  .contact .contact-content .column{
+    width: 100%;
+  }
+  .contact .contact-content .column .text{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  .contact .contact-content .column .button-area{
+    justify-content: center;
   }
 }

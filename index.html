@@ -71,7 +71,9 @@
             <h2 class="title">About me</h2>
             <div class="aboutmain-content">
                 <div class="column left">
-                    <img src="./images/KirtiProfile.jpg" alt="Profile Photo" class="home-img">
+                    <div class="image_container">
+                        <img src="./images/KirtiProfile.jpg" alt="Profile Photo" class="home-img">
+                    </div>
                 </div>
                 <div class="column right">
                     <div class="text">I'm Kirti and I'm a <span class="typing-2">Full-Stack Web Developer</span></div>
@@ -137,8 +139,7 @@
     <section class="skills" id="tech-stacks">
         <div class="max-width">
             <h2 class="title">Tech Stack</h2>
-            <div class="skills-content" style="padding-bottom: -01%;">
-
+            <div class="skills-content">
                 <div id="container">
                     <div>
                         <img src="./skill-logo/html-5.png" alt="">
@@ -204,85 +205,111 @@
 
     <!-- project section start -->
     <section class="project" id="projects">
-        <div class="max-width">
-            <h2 class="title">Projects</h2>
-        </div>
-
-        <!-- card 1 -->
-        <div class="projectcardsmain">
-            <div class="projectcards project-card">
-
-                <img src="./images/beppomart.PNG" alt="beppoMart" class="imagepro">
-                <div class="overlaypro">
-                    <div class="textpro">
-                        <!-- <p class="project-title">Beppo Mart</p>
-                        <p class="project-description"> Clone of Travelocity Website <br>It is a restful-based web
-                            service for online flights,hotel and Cab bookings.</p>
-                        <p class="project-tech-stack">Tech-Stack Used: HTML | CSS | JavaScript </p> -->
-
-                        <h1>Beppo Mart</h1>
-                        <p>Your favourites just a click away!</p>
-                    </div>
-
-                </div>
-                <div class="projectbuttons">
-                    <a href="https://beppo-mart-kirti-bhosale.netlify.app/" class="project-deployed-link"
-                        target="blank"><button>Live</button></a>
-                    <a href="https://github.com/kirti136/fun-veil-9754" class="project-github-link"
-                        target="blank"><button>Code</button></a>
-                </div>
+        <div class="project-width">
+            <div>
+                <h2 class="title">Projects</h2>
             </div>
+            <div class="projectcardsmain">
+                <!-- a -->
+                <div class="projectcards project-card">
+                    <div class="imageProject">
+                        <img src="./images/beppomart.PNG" alt="beppoMart" class="imagepro">
+                    </div>
+                    <div class="textProject">
+                        <div class="project-data">
+                            <h1 class="project-title">Beppo Mart</h1>
+                            <p class="project-description">Shop at Beppo Mart for high-quality products across multiple
+                                categories, including groceries, fashion and lifestyle, and more. Enjoy seamless
+                                navigation, exceptional customer service, and competitive prices. Experience the
+                                convenience of online shopping today.
+                            </p>
+                            <p><strong style="color:rgb(170, 170, 18);">TechStack:</strong> HTML | CSS | JS 
+                            </p>
+                        </div>
 
-            <div class="projectcards project-card">
-                <img src="./images/vaccination.PNG" alt="Avatar" class="imagepro">
-                <div class="overlaypro">
-                    <div class="textpro">
-                        <h1>Masai Vaccination</h1>
-                        <p>Stay Home, Stay Safe!</p>
+                        <div class="project-buttons">
+                            <a href="https://beppo-mart-kirti-bhosale.netlify.app/" class="project-deployed-link"
+                                target="blank"><button>Live</button></a>
+                            <a href="https://github.com/kirti136/fun-veil-9754" class="project-github-link"
+                                target="blank"><button>Code</button></a>
+                        </div>
                     </div>
                 </div>
-                <div class="projectbuttons">
-                    <a href="https://masai-vaccination-kirti-bhosale.netlify.app/" class="project-deployed-link"
-                        target="blank"><button>Live</button></a>
-                    <a href="https://github.com/kirti136/Masai-Vaccination" class="project-github-link"
-                        target="blank"><button>Code</button></a>
-                </div>
-            </div>
-        </div>
-        <!-- card 2 -->
-        <div class="projectcardsmain">
-            <!-- a -->
-            <div class="projectcards project-card">
-
-                <img src="images/venturepark.png" alt="Avatar" class="imagepro">
-                <div class="overlaypro">
-                    <div class="textpro">
-                        <h1>Venture Park</h1>
-                        <p>Make Your Own Stories!</p>
+                <!-- b -->
+                <div class="projectcards project-card">
+                    <div class="imageProject">
+                        <img src="./images/vaccination.PNG" alt="Avatar" class="imagepro">
                     </div>
+                    <div class="textProject">
+                        <div class="project-data">
+                            <h1 class="project-title">Masai Vaccination</h1>
+                            <p class="project-description">This Project focuses on an efficient method of storing
+                                vaccination information to track vaccination rates and monitor public health trends. Our
+                                user-friendly platform enables healthcare providers and authorized individuals to easily
+                                input and retrieve vaccination data.
+                            </p>
+                            <p><strong style="color:rgb(170, 170, 18);">TechStack:</strong> HTML | CSS | JS 
+                            </p>
+                        </div>
 
-                </div>
-                <div class="projectbuttons">
-                    <a href="https://venture-park.netlify.app/" class="project-deployed-link"
-                        target="blank"><button>Live</button></a>
-                    <a href="https://github.com/kirti136/aromatic-caption-2256" class="project-github-link"
-                        target="blank"><button>Code</button></a>
-                </div>
-            </div>
-            <!-- b -->
-            <div class="projectcards project-card">
-                <img src="images/sportsweardelight.png" alt="Avatar" class="imagepro">
-                <div class="overlaypro">
-                    <div class="textpro">
-                        <h1>Sports Wear Delight</h1>
-                        <p>Your favourites just a click away!</p>
+                        <div class="project-buttons">
+                            <a href="https://masai-vaccination-kirti-bhosale.netlify.app/" class="project-deployed-link"
+                                target="blank"><button>Live</button></a>
+                            <a href="https://github.com/kirti136/Masai-Vaccination" class="project-github-link"
+                                target="blank"><button>Code</button></a>
+                        </div>
                     </div>
                 </div>
-                <div class="projectbuttons">
-                    <a href="https://amazing-concha-0e1468.netlify.app/" class="project-deployed-link"
-                        target="blank"><button>Live</button></a>
-                    <a href="https://github.com/deepakthecoder1982/shut-point-1924" class="project-github-link"
-                        target="blank"><button>Code</button></a>
+                <!-- c -->
+                <div class="projectcards project-card">
+                    <div class="imageProject">
+                        <img src="images/venturepark.png" alt="Avatar" class="imagepro">
+                    </div>
+                    <div class="textProject">
+                        <div class="project-data">
+                            <h1 class="project-title">Venture Park</h1>
+                            <p class="project-description">Its an e-commerce website to help you with your adventure. I
+                                have cloned basspro.com website and named it ad Venture Park. Venture Park Shops is your
+                                trusted source for quality fishing, hunting, boating and outdoor sporting goods.
+                                Inspiring people to enjoy & protect the great adventure of their Life. Have a prosperous
+                                and adventureous journey ahead.
+                            </p>
+                            <p><strong style="color:rgb(170, 170, 18);">TechStack:</strong> HTML | CSS | JS | Node |
+                                MongoDb | Express
+                            </p>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://venture-park.netlify.app/" class="project-deployed-link"
+                                target="blank"><button>Live</button></a>
+                            <a href="https://github.com/kirti136/aromatic-caption-2256" class="project-github-link"
+                                target="blank"><button>Code</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- d -->
+                <div class="projectcards project-card">
+                    <div class="imageProject">
+                        <img src="images/sportsweardelight.png" alt="Avatar" class="imagepro">
+                    </div>
+                    <div class="textProject">
+                        <div class="project-data">
+                            <h1 class="project-title">Sports Wear Delight</h1>
+                            <p class="project-description">Sports Wear Delight is a clone of www.ems.com. Eastern
+                                Mountain Sports is an online retail company offering outdoor gear, apparel, and
+                                accessories, as well as helpful resources for outdoor enthusiasts.
+                            </p>
+                            <p><strong style="color:rgb(170, 170, 18);">TechStack:</strong>  HTML | CSS | JS 
+                            </p>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://amazing-concha-0e1468.netlify.app/" class="project-deployed-link"
+                                target="blank"><button>Live</button></a>
+                            <a href="https://github.com/deepakthecoder1982/shut-point-1924" class="project-github-link"
+                                target="blank"><button>Code</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -317,21 +344,17 @@
                 Github
                 Calendar</h2>
             <div class="react-activity-calendar calendar">
-                <!-- Loading stuff -->
                 Loading the data just for you.
             </div>
         </div>
 
     </section>
 
-
-
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
-
                 <div class="column right">
                     <div class="text">Message me</div>
                     <form action="#" name="submit-to-google-sheet">
@@ -373,7 +396,7 @@
                                     class="fab fa-linkedin"></i> </a>
                             <div class="info">
                                 <div class="sub-titles"> <a href="https://www.linkedin.com/in/kirti-bhosale-0417011a7/"
-                                        id="contact-linkedin" target="_blank">Linkedin - Kirti Bhosale</a> </div>
+                                        id="contact-linkedin" target="_blank">Kirti Bhosale</a> </div>
                             </div>
                         </div>
                         <div class="row">
@@ -381,9 +404,8 @@
                                     class="fab fa-github"></i>
                             </a>
                             <div class="info">
-                                <!-- <div class="head">Email</div> -->
                                 <div class="sub-title"> <a href="https://github.com/kirti136" id="contact-phone"
-                                        target="_blank">GitHub - kirti136</a> </div>
+                                        target="_blank">kirti136</a> </div>
                             </div>
                         </div>
 
@@ -391,32 +413,19 @@
                             <a href="#" id="contact-phone" target="_blank"><i class="fa-solid fa-phone"></i>
                             </a>
                             <div class="info">
-                                <div class="sub-title"> <a href="#" id="contact-phone" target="_blank">Contact - +91
+                                <div class="sub-title"> <a href="#" id="contact-phone" target="_blank">+91
                                         8669664848</a> </div>
                             </div>
                         </div>
-
-                        <!-- <div class="row">
-                            <a> <span class="material-symbols-outlined">
-                                    <i class="fa-solid fa-phone"></i> Mobile Number
-                                </span> </a>
-                            <div class="info">
-                                <div class="sub-title"> +91 8669664848 </div>
-                            </div>
-                        </div> -->
-
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- footer section start -->
     <footer>
-
+        <p>Made by bhosalekirti2002@gmail.com</p>
     </footer>
-
     <script src="script.js"></script>
 
     <script>

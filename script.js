@@ -63,6 +63,7 @@ document.getElementById("resume-button-1").onclick = () => {
     "https://drive.google.com/file/d/1gQ1LyX41G-Qs10g5oyx6Y9es2Zq6WFxV/view?usp=sharing",
     `_blank`
   );
+  cy.get('#resume-link-1').click({force: true});
 };
 
 document.getElementById("resume-button-2").onclick = () => {

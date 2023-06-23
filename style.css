@@ -95,12 +95,12 @@ section .title::after {
 }
 .navbar.sticky {
   padding: 17px 0;
-  background: #092039;
+  background: #0d1619;
 }
 .navbar .max-width {
   /* border: 1px solid red; */
   /* margin-left: 18%; */
-  /* background-color: #092039; */
+  /* background-color: #0d1619; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,11 +111,11 @@ section .title::after {
   font-weight: 600;
 }
 .navbar .logo a span {
-  color: #e6840d;
+  color: #ae5030;
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
-  color: #e6840d;
+  color: #ae5030;
 }
 .navbar .menu li {
   list-style: none;
@@ -134,11 +134,11 @@ section .title::after {
 .navbar .menu li a:hover {
   color: #a8eef3;
   box-shadow: rgb(168, 238, 243) 0px 0px 20px -9px;
-  color: #092039;
+  color: #0d1619;
   background-color: rgb(230, 230, 230);
 }
 .navbar.sticky .menu li a:hover {
-  color: #092039;
+  color: #0d1619;
 }
 
 /* menu btn styling */
@@ -152,7 +152,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #0c223b;
+  background: #0d1619;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -179,7 +179,7 @@ section .title::after {
 /* home1 section styling */
 .home1 {
   display: flex;
-  background: url("./skill-logo/banner.png") no-repeat center;
+  background: url("./images/banner3.jpeg") no-repeat center;
   background-color: #111;
   height: 100vh;
   color: #fff;
@@ -193,8 +193,8 @@ section .title::after {
   margin: auto;
   display: flex;
   justify-content: center;
-  padding-left: 17%;
-  padding-top: 10%;
+  /* padding-left: 17%; */
+  /* padding-top: 10%; */
   line-height: 65px;
 }
 .home1 .max-width .row {
@@ -269,7 +269,7 @@ section .title::after {
 }
 .aboutmain .aboutmain-content .right a {
   display: inline-block;
-  background: #0c223b;
+  background: #0d1619;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -292,7 +292,7 @@ section .title::after {
 .services,
 .project {
   color: #fff;
-  background: #092039;
+  background: #0d1619;
 }
 .services .title::before,
 .project .title::before {
@@ -300,14 +300,14 @@ section .title::after {
 }
 .services .title::after,
 .project .title::after {
-  background: #092039;
+  background: #0d1619;
   color: white;
   content: "what I do";
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
   background: #fff;
-  color: #092039;
+  color: #0d1619;
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
@@ -412,7 +412,7 @@ section .title::after {
   font-size: 15px;
   font-weight: bold;
   border-radius: 8px;
-  background-color: #e6840d;
+  background-color: #ae5030;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -580,17 +580,14 @@ section .title::after {
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: #251e21;
-  border: 2px solid #251e21;
+  background: #0d1619;
+  border: none;
   transition: all 0.3s ease;
 }
-.right form .button-area button:hover {
-  color: #251e21;
-  background: none;
-}
+
 /* footer section styling */
 footer {
-  background: #092039;
+  background: #0d1619;
   padding: 10px;
   color: #fff;
   text-align: center;
@@ -611,7 +608,7 @@ footer {
     width: 100%;
     left: -100%;
     top: 0;
-    background: #092039;
+    background: #0d1619;
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -669,7 +666,7 @@ footer {
   .services .serv-content .card {
     width: 100%;
   }
-}
+} 
 
 @media (max-width: 500px) {
   .home1 .home1-content .text-2 {
@@ -764,6 +761,14 @@ footer {
 @media screen and (max-width: 444px) and (min-width: 0px) {
   #container {
     grid-template-columns: repeat(2, auto);
+  }
+  #githubstatsflex {
+    grid-template-columns: repeat(1,1fr);
+    width: 70%;
+    gap: 0px;
+  }
+  #statssecondcolumn img{
+    margin-bottom: 4px;
   }
 }
 

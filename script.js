@@ -1,3 +1,8 @@
+function submitForm() {
+  document.getElementById("contactForm").submit();
+  document.getElementById("contactForm").reset();
+}
+
 $(document).ready(function () {
   $(window).scroll(function () {
     // sticky navbar on scroll script

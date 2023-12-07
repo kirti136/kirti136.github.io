@@ -416,7 +416,7 @@
             <div class="contact-content">
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="https://formspree.io/f/myyqrwdg"
+                    <form id="contactForm" action="https://formspree.io/f/myyqrwdg"
                     method="POST" name="submit-to-google-sheet">
                         <div class="fields">
                             <div class="field name">
@@ -487,36 +487,6 @@
         <p>Made by bhosalekirti2002@gmail.com</p>
     </footer>
     <script src="script.js"></script>
-
-    <!-- <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzcYogx84mtYKOTGtJeqEip1yUFvnpfn34uBMIrecYs3gtRKD0m_sMHPK7ABlDEu6cx/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg");
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            msg.innerHTML = "Sending Message";
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully";
-                    setTimeout(() => {
-                        msg.innerHTML = "";
-                    }, 3000)
-                    form.reset();
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-
-    </script> -->
-    <script>
-        function submitForm() {
-            // Submit the form to Formspree
-            document.getElementById('contactForm').submit();
-    
-            // Reset the form after submission
-            document.getElementById('contactForm').reset();
-        }
-    </script>
 </body>
 
 </html>
